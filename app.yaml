@@ -1,12 +1,10 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python39
 
 handlers:
--url: /
-    static_files: index.html
-    upload: index.html
-    
--url: /(.*)
-    static_files: pantai-kartini/\1
-    upload: pantai-kartini/(.*)
+- url: /
+  static_files: pantai-kartini/index.html
+  upload: pantai-kartini/index.html
+
+- url: /(.*)
+  static_files: pantai-kartini/\1
+  upload: pantai-kartini/(.*)
